@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#f40",
+  "navigationBarTitleText": "我的微信小程序-demo01",
+  "navigationBarTextStyle":"white",
+  "backgroundColor": "#07c160"
+}

@@ -1,0 +1,39 @@
+<!--pages/demo02/demo02.wxml-->
+<!-- 
+    text标签相当于span标签
+    view相当于div
+ -->
+<text>1</text>
+<text>2</text>
+
+<!-- view相当于div -->
+<view>3</view>
+
+<!-- 数据绑定 -->
+<!-- 字符串 -->
+<view>
+    {{msg}}
+</view>
+
+<!-- 数字 -->
+<view>
+    {{number}}
+</view>
+
+<!-- 布尔 -->
+<view>
+    {{isOk}}
+</view>
+
+<!-- 对象 -->
+<view>
+    {{person}}
+</view>
+
+<view>
+    {{person.name}}
+</view>
+
+<view>
+    {{person.weight}}
+</view>
