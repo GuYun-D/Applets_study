@@ -10,7 +10,19 @@ Page({
       height: 155,
       weight: 400
     },
-    isChecked: false
+    isChecked: false,
+    list: [
+      {
+        id: 0,
+        name: "唐僧"
+      },{
+        id: 1,
+        name: "孙悟空"
+      },{
+        id: 3,
+        name: "猪八戒"
+      }
+    ]
   },
 });
   
