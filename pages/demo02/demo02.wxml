@@ -51,3 +51,15 @@
     <checkbox checked></checkbox>
     <checkbox checked="{{isChecked}}"></checkbox>
 </view>
+
+
+<!-- 运算 -->
+<!-- 
+    可以在花括号中使用表达式
+
+    表达式：简单，运算，数据运算，字符串， 拼接，逻辑运算，三元表达式
+    语句：if-else, switch, for ...
+ -->
+<view>{{1 + 1}}</view>
+<view>{{1 + "1"}}</view>
+<view>{{10 % 2  === 0 ? "偶数" : "奇数"}}</view>
