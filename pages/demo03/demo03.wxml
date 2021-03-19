@@ -1,0 +1,15 @@
+<!-- 
+  input事件：输入框文本发生变化
+  事件关键字：bindinput
+  通过事件源对象（e）获取文本输入值: e.detail.value
+  把输入框的值赋给data：
+    不能直接 
+      1 this.data.num=e.detail.value 
+      2 this.num=e.detail.value 
+    正确的写法
+      this.setData({
+        num:e.detail.value 
+      })
+ -->
+<input type="text" bindinput="handleInput"/>
+<view>{{num}}</view>
