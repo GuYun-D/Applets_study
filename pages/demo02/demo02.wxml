@@ -2,6 +2,7 @@
 <!-- 
     text标签相当于span标签
     view相当于div
+    checkbox就是复选框
  -->
 <text>1</text>
 <text>2</text>
@@ -36,4 +37,17 @@
 
 <view>
     {{person.weight}}
+</view>
+
+<!-- 在标签的属性中使用 -->
+<view data-num="{{number}}">自定义属性</view>
+
+<!-- 复选框 -->
+<!-- 
+    checked:默认选中，同checked=“true/false”
+    字符串和花括号不能存在空格
+ -->
+<view>
+    <checkbox checked></checkbox>
+    <checkbox checked="{{isChecked}}"></checkbox>
 </view>

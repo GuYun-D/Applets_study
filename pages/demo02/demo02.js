@@ -9,7 +9,8 @@ Page({
       age: 30,
       height: 155,
       weight: 400
-    }
+    },
+    isChecked: false
   },
 });
   
