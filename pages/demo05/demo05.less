@@ -1,0 +1,23 @@
+// 定义less变量
+// 小程序不支持通配符选择器，其他同
+@color: yellow;
+
+text{
+    color: @color;
+}
+
+
+view{
+  .viel{
+    text{
+      color: red;
+    }
+  }
+}
+
+// 导入
+@import "../../style/reset.less";
+
+view{
+    color: @themeColor;
+}
