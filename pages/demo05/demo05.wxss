@@ -1,0 +1,2 @@
+/* 引入样式表，使用@import，必须使用相对路经 */
+@import "../../style/common.wxss"
