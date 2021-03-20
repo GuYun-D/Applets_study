@@ -1,0 +1,22 @@
+/*
+  需要把页面中的某些元素的单位换算成rpx
+  设计稿： 750px = 750 rpx
+            1px = 1rpx
+          当屏幕变成375px时 1px = 2rpx
+  若另一个设计稿宽度414或者未知的的尺寸
+        若宽度未知，页面有一个宽度为100px的元素，实现配置
+        page px = 750 rpx
+        1px = 750 rpx / page
+        带入：100 px = 750 rpx * 100 / page
+        假设page = 375
+  使用calc
+        750和px之间，运算符两边均不能留有空格
+ */
+
+view {
+  /* width: 200rpx; */
+  width: calc(750rpx*100/375);
+  height: 200rpx;
+  font-size: 40rpx;
+  background-color: aqua;
+}
