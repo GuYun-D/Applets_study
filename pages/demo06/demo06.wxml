@@ -1,0 +1,13 @@
+<!--
+    hover-class: 点击时添加类名
+    hover-start-time：按住多久出现点击态
+    hover-stay-time：松开之后保留多久点击态
+    hover-stop-propagation：阻止父级出现点击态
+-->
+
+<view hover-class="add" hover-start-time="2000" hover-stay-time="3000" hover-stop-propagation="false">点我</view>
+
+
+<view class="parent" hover-class="changeRed">
+  <view class="child" hover-class="changeGreen">点我</view>
+</view>
