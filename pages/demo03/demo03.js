@@ -8,10 +8,19 @@ Page({
     num: 0
   },
 
-  handleInput(e){
+  handleInput(e) {
     // console.log(e);
     this.setData({
       num: e.detail.value
+    })
+  },
+
+  handletap(e) {
+    // 获取自定义属性
+    const operation = e.currentTarget.dataset.operation
+    // console.log(operation);
+    this.setData({
+      num: this.data.num += operation
     })
   }
 })

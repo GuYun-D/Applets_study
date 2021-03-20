@@ -10,6 +10,16 @@
       this.setData({
         num:e.detail.value 
       })
+  tap事件：点击事件
+            无法在小程序的事件中传参
+            需要使用自定义属性的方式
+            事件源中获取
  -->
-<input type="text" bindinput="handleInput"/>
+<input type="text" bindinput="handleInput" />
 <view>{{num}}</view>
+
+<!-- 识别不到 -->
+<!-- <button bindtap="handletap(1)">+</button>
+<button bindtap="handletap(-1)">-</button> -->
+<button bindtap="handletap" data-operation="{{1}}">+</button>
+<button bindtap="handletap" data-operation="{{-1}}">-</button>
