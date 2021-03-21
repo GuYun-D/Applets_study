@@ -1,0 +1,9 @@
+/* pages/demo08/demo08.wxss */
+
+image{
+  box-sizing: border-box;
+  border: 1px solid red;
+
+  width: 400px;
+  height: 400px;
+}
