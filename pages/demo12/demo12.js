@@ -8,6 +8,16 @@ Page({
 
   },
 
+  // 获取用户手机号的
+  getphonenumber(e) {
+    console.log(e);
+  },
+
+  // 获取用户个人信息
+  getUserInfo(e) {
+    console.log(e);
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
