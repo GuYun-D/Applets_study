@@ -9,9 +9,51 @@
                 swiperWidth / swiperHeight = 原图宽 / 原图高
                 swiperHeight = swiperWidth * 原图高 / 原图宽
                 swiperHeight = 100%(750rpx/100vw) * 280 / 528
+          autoplay: 自动轮播
+          interval: 轮播时间，默认五秒
+          circular: 衔接轮播
+          indicator-dots: 是否加上轮播小圆点
+          indicator-color: 未选中的圆点颜色
+          indicator-active-color: 选中的颜色
+          vertical: 滑动方向，默认false，横向滑动
+          easing-function: 轮播动画
+                    default	默认缓动函数	
+                    linear	线性动画	
+                    easeInCubic	缓入动画	
+                    easeOutCubic	缓出动画	
+                    easeInOutCubic	缓入缓出动画
             -->
 
-<swiper>
+<swiper autoplay="true" interval="3000" circular="true" indicator-dots="true" indicator-color="#fff"
+  indicator-active-color="#f40">
+  <swiper-item>
+    <image mode="widthFix"
+      src="https://img.alicdn.com/imgextra/i1/2206686532409/O1CN01D1qn4x1TfMmtNojqs_!!2206686532409-0-lubanimage.jpg" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="https://aecpm.alicdn.com/simba/img/TB183NQapLM8KJjSZFBSutJHVXa.jpg" />
+  </swiper-item>
+</swiper>
+
+<swiper autoplay="true" interval="3000" circular="true" indicator-dots="true" indicator-color="#fff"
+  indicator-active-color="#f40" vertical="true">
+  <swiper-item>
+    <image mode="widthFix"
+      src="https://img.alicdn.com/imgextra/i1/2206686532409/O1CN01D1qn4x1TfMmtNojqs_!!2206686532409-0-lubanimage.jpg" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="https://aecpm.alicdn.com/simba/img/TB183NQapLM8KJjSZFBSutJHVXa.jpg" />
+  </swiper-item>
+</swiper>
+
+<swiper autoplay="true" interval="3000" circular="true" indicator-dots="true" indicator-color="#fff"
+  indicator-active-color="#f40" easing-function="easeInOutCubic">
   <swiper-item>
     <image mode="widthFix"
       src="https://img.alicdn.com/imgextra/i1/2206686532409/O1CN01D1qn4x1TfMmtNojqs_!!2206686532409-0-lubanimage.jpg" />
