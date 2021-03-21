@@ -1,0 +1,25 @@
+<!-- 
+  button
+      1. 外观样式
+            size: default/mini 按钮大小
+            type: 控制颜色
+                  值	说明	
+                  primary	绿色	
+                  default	白色	
+                  warn	红色
+            plain: 按钮是否镂空，背景色透明 boolean
+            loading: 添加loading样式
+ -->
+
+<button>默认按钮</button>
+<button size="mini">默认按钮</button>
+<button type="primary">默认按钮</button>
+<button type="warn">默认按钮</button>
+
+<button plain="true">plain=true</button>
+
+<button type="primary" loading>默认按钮</button>
+
+<button disabled>默认按钮</button>
+
+
