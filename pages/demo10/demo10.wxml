@@ -1,0 +1,26 @@
+<!-- 
+  navigator，超链接标签
+  1.url：跳转路径，绝对相对路径都可以
+  2.块级元素，默认换行3
+  3.target：要跳转当前小程序还是其他的小程序
+            self: 默认值，自己
+            miniProgram：其他的小程序
+  4.open-type：跳转方式
+          navigate	对应 wx.navigateTo 或 wx.navigateToMiniProgram 的功能	（默认值，保留当前页，跳转到应用内的某个页面，但是不能跳转到tabBar的页面）
+          redirect	对应 wx.redirectTo 的功能	（关闭当前页面，跳转到应用内的某个页面，但是不允许跳转到 tabbar 页面。）
+          switchTab	对应 wx.switchTab 的功能	（跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面）
+          reLaunch	对应 wx.reLaunch 的功能	(关闭所有页面，打开到应用内的某个页面)
+          navigateBack	对应 wx.navigateBack 的功能	
+          exit	退出小程序，target="miniProgram"时生效
+ -->
+
+<!-- 跳转有返回按钮 -->
+<navigator url="../demo09/demo09">轮播图页面</navigator>
+<!-- 不跳转 -->
+<navigator url="../index/index">tabBar页面</navigator>
+<!-- 跳转没有返回按钮 -->
+<navigator open-type="redirect" url="../demo09/demo09">轮播页面 redirect</navigator>
+<!-- 跳转至tabbar -->
+<navigator url="../index/index" open-type="switchTab">tabBar页面</navigator>
+<!-- 随便跳 -->
+<navigator url="../index/index" open-type="reLaunch">tabBar页面</navigator>
