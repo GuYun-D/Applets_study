@@ -1,0 +1,8 @@
+swiper{
+  width: 100%;
+  height: cala(100%(750rpx/100vw) * 280 / 528);
+}
+
+image{
+  width: 100%;
+}

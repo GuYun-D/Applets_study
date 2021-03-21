@@ -1,0 +1,25 @@
+<!-- 
+  swiper 轮播图外层容器
+          默认样式：
+              1.width：100%
+              2.height: 150px  image默认320 * 240
+              3.swiper高度无法实现随内容自动撑开
+          解决：先找到原图的宽高，等比例给swiper定宽高
+                原图：520 * 280
+                swiperWidth / swiperHeight = 原图宽 / 原图高
+                swiperHeight = swiperWidth * 原图高 / 原图宽
+                swiperHeight = 100%(750rpx/100vw) * 280 / 528
+            -->
+
+<swiper>
+  <swiper-item>
+    <image mode="widthFix"
+      src="https://img.alicdn.com/imgextra/i1/2206686532409/O1CN01D1qn4x1TfMmtNojqs_!!2206686532409-0-lubanimage.jpg" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="https://aecpm.alicdn.com/simba/img/TB1XotJXQfb_uJkSnhJSuvdDVXa.jpg" />
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="https://aecpm.alicdn.com/simba/img/TB183NQapLM8KJjSZFBSutJHVXa.jpg" />
+  </swiper-item>
+</swiper>
