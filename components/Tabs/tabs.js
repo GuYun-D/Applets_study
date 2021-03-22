@@ -54,11 +54,12 @@ Component({
       4 对数组循环
         1 给每一个循环性 选中属性 改为 false
         2 给 当前的索引的 项 添加激活选中效果就可以了！！！
-
-       
-       5 点击事件触发的时候 
-          触发父组件中的自定义事件 同时传递数据给  父组件  
-          this.triggerEvent("父组件自定义事件的名称",要传递的参数)
+      5 点击事件触发的时候 
+         触发父组件中的自定义事件 同时传递数据给  父组件  
+         this.triggerEvent("父组件自定义事件的名称",要传递的参数)
+         不能在下面对tabs就行处理，虽然效果一样，但是真正的数据并未修改
+         let {tabs} = this.data， 这段代码同样可以拿到数据，但是拿到的是propertie中的tabs
+         this.setData({tabs}), 这就相当于在本文件的data加了一个数据，相当于页面就存在了两个tabs，所以这是有问题的
        */
 
       // 获取索引
@@ -67,18 +68,22 @@ Component({
         index
       } = e.currentTarget.dataset;
       console.log(index);
+
+      // 触发父组件中的自定义事件，同时传递数据给
+      this.triggerEvent("itemChange", {index})
+
       // 获取原数组
-      let {
-        tabs
-      } = this.data
-      // 循环数组
-      tabs.forEach((v, i) => {
-        i === index ? v.isActive = true : v.isActive = false
-      });
-      // 重新赋值
-      this.setData({
-        tabs
-      })
+      // let {
+      //   tabs
+      // } = this.data
+      // // 循环数组
+      // tabs.forEach((v, i) => {
+      //   i === index ? v.isActive = true : v.isActive = false
+      // });
+      // // 重新赋值
+      // this.setData({
+      //   tabs
+      // })
     }
   }
 })
