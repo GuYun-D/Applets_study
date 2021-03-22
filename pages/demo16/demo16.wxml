@@ -6,4 +6,9 @@
       在组件上添加一个自定义事件
  -->
 
-<Tabs tabs="{{tabs}}" binditemChange="handleItemChange"></Tabs>
+<Tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+   <block wx:if="{{tabs[0].isActive}}">0</block>
+   <block wx:if="{{tabs[1].isActive}}">1</block>
+   <block wx:if="{{tabs[2].isActive}}">2</block>
+   <block wx:if="{{tabs[3].isActive}}">3</block>
+</Tabs>
