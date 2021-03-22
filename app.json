@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/demo17/demo17",
     "pages/demo16/demo16",
     "pages/demo15/demo15",
     "pages/demo14/demo14",
@@ -53,6 +54,11 @@
     },{
       "pagePath": "pages/search/search",
       "text": "搜索",
+      "iconPath": "./icon/_search.png",
+      "selectedIconPath": "./icon/search.png"
+    },{
+      "pagePath": "pages/demo17/demo17",
+      "text": "生命周期",
       "iconPath": "./icon/_search.png",
       "selectedIconPath": "./icon/search.png"
     }],
