@@ -1,0 +1,19 @@
+<!-- 
+  radio 单选框
+  1. 必须要和一个父元素radio-group一起来使用
+  2.value选中的单选框的值
+  3.给radio-group绑定change事件
+  4.显示选中的值
+-->
+
+<radio-group bindchange="handleChange">
+  <radio value="male">男</radio>
+  <radio value="female">女</radio>
+</radio-group>
+
+<view>你选中的是： {{gender}}</view>
+
+<radio value="noperson" color="red">人妖</radio>
+
+<radio value="noperson" disabled>人妖</radio>
+<radio value="noperson" checked>人妖</radio>
