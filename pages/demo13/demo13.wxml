@@ -1,0 +1,9 @@
+<!-- 
+  icon
+      type:success, success_no_circle, info, warn, waiting, cancel, download, search, clear
+      size: 默认23
+      color: 同css
+ -->
+
+<icon type="success_no_circle" size="40" color="#f40"></icon>
+<icon type="success_no_circle" size="40" color="#f40"></icon>
